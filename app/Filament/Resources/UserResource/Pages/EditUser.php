@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\PurchaseResource\Pages;
+namespace App\Filament\Resources\UserResource\Pages;
 
-use App\Filament\Resources\PurchaseResource;
+use App\Filament\Resources\UserResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditPurchase extends EditRecord
+class EditUser extends EditRecord
 {
-    protected static string $resource = PurchaseResource::class;
+    protected static string $resource = UserResource::class;
 
     protected function getHeaderActions(): array
     {
