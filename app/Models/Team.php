@@ -17,4 +17,11 @@ class Team extends Model
     {
         return $this->belongsToMany(User::class);
     }
+
+    /** @return HasMany<\App\Models\Role, self> */
+    public function roles(): HasMany
+    {
+        return $this->hasMany(\App\Models\Role::class);
+    }
+
 }
